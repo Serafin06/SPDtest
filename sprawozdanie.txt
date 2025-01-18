@@ -26,3 +26,5 @@ git add test1.txt
 git add sprawozdanie.txt
 
 git commit -m "Dodanie dwoch plikow"
+
+git push
