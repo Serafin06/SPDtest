@@ -28,3 +28,21 @@ git add sprawozdanie.txt
 git commit -m "Dodanie dwoch plikow"
 
 git push
+
+GIT LAB - Docker
+
+docker pull gitlab/gitlab-ce:latest
+nano docker-compose.yml
+docker-compose up -d
+docker exec -it gitlab gitlab-rake "gitlab:password:reset[root]"
+git clone http://157.158.51.211:8080/root/my-repo
+cd my-repo
+echo :"# My Repo" >README.md
+git add README.md
+git config --global user.email "zielony.banan88@gmail.com"
+it config --global user.name "RafaL"              
+git commit -m "Initial commit"
+git push origin main
+
+
+
